@@ -1,0 +1,16 @@
+#allCards{
+  border-radius: 2em;
+  box-shadow: 5px 5px black;
+  border: thin solid black;
+  padding: 5em;
+  background-color: antiquewhite;
+}
+#searchCard{
+  margin: 1.8rem;
+  border-radius: 2em;
+  box-shadow: 5px 5px black;
+  border: thin solid black;
+  padding: 5em;
+  color: blue;
+  background-color: lightblue;
+}

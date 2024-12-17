@@ -1,0 +1,52 @@
+html,
+body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  background-color: coral;
+  border-bottom: 2px dashed black;
+}
+#root{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-image: linear-gradient(180deg, coral 80%, grey);
+}
+img {
+  max-width: 194px;
+}
+footer {
+  border-top: 2px dashed black;
+  background-color: grey;
+}
+@media (max-width: 991px) {
+
+  #header .navbar-toggler {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 4px 9px;
+  outline: none;
+  box-shadow: none;
+  }
+  #header .navbar-toggler span {
+    width: 25px;
+    height: 2px;
+    background: #132;
+    margin: 4px 0;
+    transition: 0.3s;
+  }
+  #header .navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  #header .navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+  }
+  #header .navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+}  
