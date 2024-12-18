@@ -12,5 +12,9 @@
   border: thin solid black;
   padding: 5em;
   color: blue;
+  text-shadow: .2px .5px darkblue ;
   background-color: lightblue;
+}
+.topOfPage {
+  rotate: 90deg;
 }

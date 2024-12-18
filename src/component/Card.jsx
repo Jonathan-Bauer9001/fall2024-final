@@ -33,7 +33,7 @@ const Card = (props) => {
   return (
     <div>
       <div className="card">
-        <img src={props.card.image} alt="Our Card" className='card-image-top mx-auto'/>
+        <img src={props.card.image} alt="Our Card" className='card-image-top m-auto p-2'/>
         {!editMode &&         
           <ul className="list-group list-group-flush">
             <li className="list-group-item text-center">{props.card.cardName}</li>

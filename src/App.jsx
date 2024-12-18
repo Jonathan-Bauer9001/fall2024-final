@@ -6,7 +6,7 @@ import AddCard from './component/AddCard';
 import _ from 'lodash';
 import Card from './component/Card';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faReply, faSearch } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   
@@ -187,7 +187,7 @@ function App() {
       <div className="row" id='allCards'>
         <h3 className="text-decoration-underline pb-3">My Collection</h3>
         {searchResults && searchResults.map((card) => (
-          <div className="col-md-6 col-lg-3 col-xl-2" key={card.id}>
+          <div className="col-md-6 col-lg-3 col-xxl-2" key={card.id}>
             <Card card={card} removeCard={removeCard} updateCard={updateCard} />
 
           </div>)
@@ -208,8 +208,11 @@ function App() {
             </select>
           </div>
           <div className='col-md-3'>
-            <button type="button" className='btn btn-lg btn-primary' onClick={searchCard}>Search Card<FontAwesomeIcon icon={faSearch}/></button>
+            <button type="button" className='btn btn-lg btn-primary' onClick={searchCard}>Search Card <FontAwesomeIcon icon={faSearch}/></button>
           </div>
+        </div>
+        <div className='text-end sticky-bottom'>
+          <a className='btn btn-light text-end my-2 shadow' href='#header'>Top of Page <FontAwesomeIcon className='topOfPage' icon={faReply}/></a>
         </div>
     </div>
 
