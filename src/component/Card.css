@@ -1,0 +1,14 @@
+.card-image {
+  border-radius: 1em;
+  
+}
+.card {
+  margin-top: 1em;
+  box-shadow: 2px 2px black;
+}
+
+.dropdown-menu,
+.dropdown-item {
+  max-width: 300px;
+  white-space: normal;
+}

@@ -207,7 +207,7 @@ function App() {
               {_(allCards).map(card => card.cardSet).sort().uniq().map(cardSet => <option key={cardSet} value={cardSet}>{cardSet}</option>).value()}
             </select>
           </div>
-          <div className='col-md-3'>
+          <div className='col-md-3 mt-2 '>
             <button type="button" className='btn btn-lg btn-primary' onClick={searchCard}>Search Card <FontAwesomeIcon icon={faSearch}/></button>
           </div>
         </div>

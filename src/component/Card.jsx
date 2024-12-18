@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faFloppyDisk, faMagicWandSparkles, faWarning } from '@fortawesome/free-solid-svg-icons';
-
+import './Card.css'
 const Card = (props) => {
 
   const [editMode, setEditMode] = useState(false);
@@ -32,20 +32,25 @@ const Card = (props) => {
 
   return (
     <div>
-      <div className="card">
-        <img src={props.card.image} alt="Our Card" className='card-image-top m-auto p-2'/>
-        {!editMode &&         
-          <ul className="list-group list-group-flush">
-            <li className="list-group-item text-center">{props.card.cardName}</li>
-            <li className="list-group-item text-center">{props.card.typeText}</li>
-            <li className="list-group-item text-center">{props.card.oracleText}</li>
-            <li className="list-group-item text-center">{props.card.cardSet}</li>
-            <div className="editDeleteBtn d-flex">
-              <button type="button" className='btn btn-danger w-50 order-1' onClick={() => props.removeCard(props.card)}>Delete Card<FontAwesomeIcon icon={faWarning} /></button>
-              <button type="button" className='btn btn-warning w-50 order-0' onClick={() => setEditMode(true)}>Edit Card<FontAwesomeIcon icon={faMagicWandSparkles} /></button>
+      <div className="card w-100">
+        <img src={props.card.image} alt="Our Card" className='w-100 card-image m-auto p-2'/>
+        {!editMode &&   
+        <div className="dropdown text-center"> 
+          <button class="btn btn-secondary dropdown-toggle m-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More Information
+          </button>     
+          <ul className="dropdown-menu">
+            <li className="dropdown-item text-center">{props.card.cardName}</li>
+            <li className="dropdown-item text-center">{props.card.typeText}</li>
+            <li className="dropdown-item text-center">{props.card.oracleText}</li>
+            <li className="dropdown-item text-center">{props.card.cardSet}</li>
+            <div className="editDeleteBtn d-flex flex-wrap column">
+              <button type="button" className='btn btn-danger w-100 mx-1 mb-1 order-1' onClick={() => props.removeCard(props.card)}>Delete Card<FontAwesomeIcon icon={faWarning} /></button>
+              <button type="button" className='btn btn-warning w-100 m-1 order-0' onClick={() => setEditMode(true)}>Edit Card<FontAwesomeIcon icon={faMagicWandSparkles} /></button>
             </div>
 
           </ul>
+        </div>
         }
         {editMode &&         
           <ul className="list-group list-group-flush">

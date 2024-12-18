@@ -53,7 +53,7 @@ const addCard = (props) => {
           <label htmlFor="fileUpload" className='form-label'>Card Image</label>
           <input type="file" id='fileUpload' className='form-control' onChange={imageUpdate} />
         </div>
-        <div className="col-md-2">
+        <div className="col-md-2 mt-2">
           <button type="button" className='btn btn-success btn-lg' id='btnAdd' onClick={doWork}>Add Card <FontAwesomeIcon icon={faPlusCircle} /></button>
         </div>
       </div>
