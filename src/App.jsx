@@ -225,7 +225,7 @@ function App() {
             <button type="button" className='btn btn-lg btn-primary' onClick={searchCard}>Search Card <FontAwesomeIcon icon={faSearch}/></button>
           </div>
         </div>
-        <div className='text-end sticky-bottom'>
+        <div className='text-end fixed-bottom mx-2 mx-lg-5'>
           <a className='btn btn-light text-end my-2 shadow' href='#header'>Top of Page <FontAwesomeIcon className='topOfPage' icon={faReply}/></a>
         </div>
     </div>
