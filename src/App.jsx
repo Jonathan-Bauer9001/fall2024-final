@@ -31,6 +31,7 @@ function App() {
   const cards = [{
 
       id: nanoid(),
+      cardQty: "1",
       cardName: "Mana Crypt",
       typeText: "Artifact",
       oracleText: "At the beginning of your upkeep, flip a coin. If you lose the flip, Mana Crypt deals 3 damage to you. Tap: Add (Colorless)(Colorless).",
@@ -38,6 +39,7 @@ function App() {
       cardSet: "Double Masters"
     }, {
       id: nanoid(),
+      cardQty: "1",
       cardName: "Jeweled Lotus",
       typeText: "Artifact",
       oracleText: "Tap, Sacrifice Jeweled Lotus: Add three mana of any one color. Spend this mana only to cast your commander.",
@@ -45,6 +47,7 @@ function App() {
       cardSet: "Commander Masters"
     }, {
       id: nanoid(),
+      cardQty: "1",
       cardName: "Nadu, Winged Wisdom",
       typeText: "Legendary Creature - Bird Wizard",
       oracleText: `Flying. Creatures you control have “Whenever this creature becomes the target of a spell or ability, reveal the top card of your library. If it’s a land card, put it onto the battlefield. Otherwise, put it into your hand. This ability triggers only twice each turn.`,
@@ -52,6 +55,7 @@ function App() {
       cardSet: "Modern Horizon 3"
     }, {
       id: nanoid(),
+      cardQty: "1",
       cardName: "Dockside Extortionist",
       typeText: "Creature - Goblin Pirate",
       oracleText: "When Dockside Extortionist enters, create X Treasure tokens, where X is the number of artifacts and enchantments your opponents control.",
@@ -59,6 +63,7 @@ function App() {
       cardSet: "Double Masters 2022"
     }, {
       id: nanoid(),
+      cardQty: "1",
       cardName: "Tinker",
       typeText: "Sorcery",
       oracleText: "As an additional cost to cast this spell, sacrifice an artifact. Search your library for an artifact card, put that card onto the battlefield, then shuffle.",
@@ -66,6 +71,7 @@ function App() {
       cardSet: "Urza's Legacy"
     }, {
       id: nanoid(),
+      cardQty: "1",
       cardName: "Tolarian Academy",
       typeText: "Legendary Land",
       oracleText: "Tap: Add Blue for each artifact you control.",
@@ -73,6 +79,7 @@ function App() {
       cardSet: "Urza's Saga"
     }, {
       id: nanoid(),
+      cardQty: "4",
       cardName: "Prophet of Kruphix",
       typeText: "Creature - Human Wizard",
       oracleText: `Untap all creatures and lands you control during each other player’s untap step. You may cast creature spells as though they had flash.`,
@@ -80,6 +87,7 @@ function App() {
       cardSet: "Theros"
     }, {
       id: nanoid(),
+      cardQty: "1",
       cardName: "Griselbrand",
       typeText: "Legendary Creature — Demon",
       oracleText: "Flying, lifelink. Pay 7 life: Draw seven cards.",
@@ -87,6 +95,7 @@ function App() {
       cardSet: "Avacyn Restored"
     }, {
       id: nanoid(),
+      cardQty: "7",
       cardName: "Biorhythm",
       typeText: "Sorcery",
       oracleText: "Each player’s life total becomes the number of creatures they control.",
@@ -94,6 +103,7 @@ function App() {
       cardSet: "Ninth Edition"
     }, {
       id: nanoid(),
+      cardQty: "3",
       cardName: "Recurring Nightmare",
       typeText: "Enchantment",
       oracleText: "Sacrifice a creature, Return Recurring Nightmare to its owner’s hand: Return target creature card from your graveyard to the battlefield. Activate only as a sorcery.",
@@ -101,6 +111,7 @@ function App() {
       cardSet: "Exodus"
     }, {
       id: nanoid(),
+      cardQty: "1",
       cardName: "Yawgmoth's Bargain",
       typeText: "Enchantment",
       oracleText: "Skip your draw step. Pay 1 life: Draw a card.",
@@ -108,6 +119,7 @@ function App() {
       cardSet: "Urza's Destiny"
     }, {
       id: nanoid(),
+      cardQty: "1",
       cardName: "Sundering TItan",
       typeText: "Artifact Creature - Golem",
       oracleText: "When Sundering Titan enters or leaves the battlefield, choose a land of each basic land type, then destroy those lands.",
@@ -115,6 +127,7 @@ function App() {
       cardSet: "Double Masters"
     }, {
       id: nanoid(),
+      cardQty: "1",
       cardName: "Primeval Titan",
       typeText: "Crature - Giant",
       oracleText: "Trample. Whenever Primeval Titan enters or attacks, you may search your library for up to two land cards, put them onto the battlefield tapped, then shuffle.",
@@ -122,6 +135,7 @@ function App() {
       cardSet: "Time Spiral Remastered"
     }, {
       id: nanoid(),
+      cardQty: "1",
       cardName: "Fastbond",
       typeText: "Enchantment",
       oracleText: "You may play any number of lands on each of your turns. Whenever you play a land, if it wasn’t the first land you played this turn, Fastbond deals 1 damage to you.",
